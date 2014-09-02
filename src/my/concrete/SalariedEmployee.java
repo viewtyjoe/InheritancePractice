@@ -26,6 +26,6 @@ public class SalariedEmployee extends Employee
     
     public double getPay()
     {
-        return annualSalary * (daysPaid / 365);
+        return annualSalary * (daysPaid / 365.0);
     }
 }

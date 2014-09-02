@@ -70,6 +70,6 @@ public class Name {
     @Override
     public String toString()
     {
-        return first + middle + last + suffix;
+        return first + " " + middle + " " + last + " " + suffix;
     }
 }

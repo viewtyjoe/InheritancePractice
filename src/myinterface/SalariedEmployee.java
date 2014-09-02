@@ -30,7 +30,7 @@ public class SalariedEmployee implements Employee
     @Override
     public double getPay()
     {
-        return annualSalary * (daysPaid / 365);
+        return annualSalary * (daysPaid / 365.0);
     }
 
     @Override
