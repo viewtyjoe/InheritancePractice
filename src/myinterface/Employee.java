@@ -12,7 +12,7 @@ import inheritancepractice.*;
  */
 public interface Employee
 {
-    public Name getName();
-    public double getPay();
-    public int getEmployeeNumber();
+    public abstract Name getName();
+    public abstract double getPay();
+    public abstract int getEmployeeNumber();
 }
