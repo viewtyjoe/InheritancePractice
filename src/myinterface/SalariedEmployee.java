@@ -15,9 +15,9 @@ import inheritancepractice.*;
 public class SalariedEmployee implements Employee
 {
     private Name name;
-    private int employeeNumber;
+    private final int employeeNumber;
     private double annualSalary;
-    private short daysPaid;
+    private final short daysPaid;
     
     public SalariedEmployee(Name name, double annualSalary, short daysPaid, int employeeNumber)
     {
@@ -43,4 +43,13 @@ public class SalariedEmployee implements Employee
     {
         return employeeNumber;
     }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public void setAnnualSalary(double annualSalary) {
+        this.annualSalary = annualSalary;
+    }
+    
 }

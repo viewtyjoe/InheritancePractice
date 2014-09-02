@@ -37,4 +37,17 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
         sales = 0;
         return super.getPay() + commission;
     }
+
+    public void setCommissionRate(double commissionRate) {
+        this.commissionRate = commissionRate;
+    }
+
+    public double getSales() {
+        return sales;
+    }
+
+    public double getCommissionRate() {
+        return commissionRate;
+    }
+    
 }

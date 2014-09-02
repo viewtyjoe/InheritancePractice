@@ -15,7 +15,7 @@ public class HourlyEmployee implements Employee
     private double hourlyRate;
     private double hours;
     private double overtimeMultiplier;
-    private int employeeNumber;
+    private final int employeeNumber;
     private Name name;
     
     public HourlyEmployee(Name name, double hourlyRate, double overtimeMultiplier, int employeeNumber)
@@ -60,6 +60,18 @@ public class HourlyEmployee implements Employee
     @Override
     public int getEmployeeNumber() {
         return employeeNumber;
+    }
+
+    public void setHourlyRate(double hourlyRate) {
+        this.hourlyRate = hourlyRate;
+    }
+
+    public void setOvertimeMultiplier(double overtimeMultiplier) {
+        this.overtimeMultiplier = overtimeMultiplier;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
     }
     
     
